@@ -8,12 +8,8 @@ interface Props {
 
 export function Background({ children }: Props) {
   return (
-    <ImageBackground
-      defaultSource={backgroundImg}
-      source={backgroundImg}
-      style={styles.container}
-    >
+    <View style={styles.container}>
       {children}
-    </ImageBackground>
+    </View>
   );
 }
